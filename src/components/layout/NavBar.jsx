@@ -30,7 +30,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                 <a href="/contact" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                   Contact
                 </a>
-                <a href="https://github.com/AdityaPurswani" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="https://github.com/AdityaPurswani/Docs-For-Dementia-Pipeline" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                   <Github size={20} />
                 </a>
                 <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">

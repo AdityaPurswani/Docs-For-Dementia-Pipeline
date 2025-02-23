@@ -16,6 +16,7 @@ import ModelArchitecture from './pages/risk/ModelArchitechture';
 import TrainingProcess from './pages/risk/TrainingProcess';
 import InferenceExplainability from './pages/risk/InferenceExplainability';
 import FeatureExtraction from './pages/mri/FeatureExtraction';
+import BatchProcessing from './pages/advanced/BatchProcessing';
 
 const App = () => {
   return (
@@ -43,6 +44,8 @@ const App = () => {
           <Route path="/risk/architecture" element={<ModelArchitecture />} />
           <Route path="/risk/training" element={<TrainingProcess />} />
           <Route path="/risk/inference" element={<InferenceExplainability />} />
+
+          <Route path="/advanced/batch" element={<BatchProcessing />} />
 
           <Route path="/contact" element={<ContactForm />}/>
 

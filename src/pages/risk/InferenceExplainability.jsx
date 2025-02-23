@@ -212,11 +212,9 @@ def analyze_report(self, medical_report):
 
           <h3 className="text-xl font-semibold mt-6 mb-3">2. Text Highlighting for Medical Report Explainability</h3>
           <p>
-          The EnhancedDementiaRiskAnalyzer extends the base analyzer by adding visual explainability 
-            through text highlighting. It analyzes each sentence's importance and applies a color gradient 
-            to visually represent the severity levels.
+          The reports are highlighted and color coded based on the context that are being taken as important and the context which are taken as less important. Where red means extremely important while detecting dementia and blue means not as important.
           </p>
-
+          <br/>
           <CodeBlock language="python">
 {`def analyze_report_with_full_highlighting(self, medical_report):
     """
@@ -290,9 +288,9 @@ analyzer = EnhancedDementiaRiskAnalyzer()
 
 # Example medical report
 example_report = """
-Patient presents with mild cognitive impairment, showing occasional forgetfulness and minor difficulty with complex tasks. Recent MRI reveals minimal atrophy in the hippocampal
-region, which is concerning. Patient demonstrates significant difficulty with memory recall tests and shows marked disorientation during evening hours. Physical examination
-is otherwise normal with stable vital signs. Whilst non-specific this pattern is described in a younger onset Alzheimer's type dementia.
+Patient presents with mild cognitive impairment, showing occasional forgetfulness and minor difficulty with complex tasks. Recent MRI reveals minimal atrophy in the 
+hippocampal region, which is concerning. Patient demonstrates significant difficulty with memory recall tests and shows marked disorientation during evening hours. 
+Physical examination is otherwise normal with stable vital signs. Whilst non-specific this pattern is described in a younger onset Alzheimer's type dementia.
 """
 
 # Analyze and display highlighted report
