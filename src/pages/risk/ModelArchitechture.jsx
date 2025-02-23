@@ -1,5 +1,6 @@
 import React from 'react';
 import CodeBlock from '../../components/CodeBlock';
+import ModelDiagram from '../../components/ModelDiagram';
 
 const ModelArchitecture = () => {
   return (
@@ -180,6 +181,11 @@ const ModelArchitecture = () => {
       {/* Complete Model Architecture */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Complete Model Architecture</h2>
+        <div>
+          <ModelDiagram/>
+          <p className='text-center'> Fiigure: Flow of the Model Architechture</p>
+          </div>
+          <br/>
         <div className="prose max-w-none text-gray-600">
           <p>
           The complete model architecture integrates the base PubMedBERT model with a custom risk assessment framework,
