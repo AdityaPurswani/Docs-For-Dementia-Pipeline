@@ -33,7 +33,7 @@ const Sidebar = () => {
       title: 'Advanced Topics',
       items: [
         { name: 'Batch Processing', href: '/advanced/batch' },
-        { name: 'GPU Optimization', href: '/advanced/gpu' },
+        { name: 'Multi-Modal Integration', href: '/advanced/multimodal' },
         { name: 'Custom Models', href: '/advanced/models' }
       ]
     }
