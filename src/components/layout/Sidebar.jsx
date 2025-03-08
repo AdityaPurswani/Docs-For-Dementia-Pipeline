@@ -33,7 +33,7 @@ const Sidebar = () => {
       title: 'Advanced Topics',
       items: [
         { name: 'Batch Processing', href: '/advanced/batch' },
-        { name: 'Multi-Modal Integration', href: '/advanced/multimodal' },
+        { name: 'Advanced Data Imputation', href: '/advanced/imputation' },
         { name: 'Custom Models', href: '/advanced/models' }
       ]
     }

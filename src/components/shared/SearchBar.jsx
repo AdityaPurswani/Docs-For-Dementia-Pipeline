@@ -39,7 +39,7 @@ const SearchBar = () => {
       section: 'Advances Topics',
       items: [
         { title: 'Batch Processing', href: '/advanced/batch', description: 'Batch processing multiple data' },
-        { title: 'GPU Optimization', href: '/advanced/gpu', description: 'GPU implementation for fast processing' },
+        { title: 'Advanced Data Imputation', href: '/advanced/imputation', description: 'Explore Class Aware data imputation strategy implied here' },
         { title: 'Custom Models', href: '/advanced/models', description: 'Custom and advanced training models' }
       ]
     }

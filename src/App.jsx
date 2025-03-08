@@ -17,6 +17,7 @@ import TrainingProcess from './pages/risk/TrainingProcess';
 import InferenceExplainability from './pages/risk/InferenceExplainability';
 import FeatureExtraction from './pages/mri/FeatureExtraction';
 import BatchProcessing from './pages/advanced/BatchProcessing';
+import DataImputation from './pages/advanced/AdvancedDataImputation';
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/risk/inference" element={<InferenceExplainability />} />
 
           <Route path="/advanced/batch" element={<BatchProcessing />} />
+          <Route path="/advanced/imputation" element={<DataImputation />} />
 
           <Route path="/contact" element={<ContactForm />}/>
 

@@ -26,7 +26,7 @@ A comprehensive documentation website for medical image analysis and risk assess
 
 ### Advanced Topics
 - Batch Processing
-- GPU Optimization
+- Advanced Data Imputation
 - Custom Models
 
 ## Features
