@@ -1,7 +1,14 @@
 # Medical Image Analysis Documentation
 
 ## Overview
-A comprehensive documentation website for medical image analysis and risk assessment. This documentation covers the entire pipeline from image loading to risk analysis, with detailed explanations and code examples.
+Neurodegenerative disorders(ND) such as Alzheimer's Dementia(AD) and Fronto-Temporal Dementia(FTD) present significant challenges in early diagnosis. The Cognitive and Neuroimaging in Neurodegenerative Disorders(CogNID) study provides a comprehensive dataset of 450 patients, including cognitive evaluations, MRI-scans, and clinical biomarkers. Our research develops an AI-driven framework for early detection of dementia by integrating multimodal data.
+
+Our comprehensive AI-driven methodology integrates both MRI data and clinical text-reports to analyse neurodegenerative disorders. MRI-scans are processed to extract volumetric data from brain-structures affected by neurodegeneration. Initially, FSL's-BET tool performs skull stripping to precisely remove non-brain tissues. The resulting brain extractions undergo intensity normalization to standardize voxel data addressing inter-scanner variability common in clinical datasets. Bias-field correction follows using FSL's-FAST algorithm to eliminate intensity non-uniformities. These pre-processed images are registered to the standard MNI152 template using ANTs'-SyN transformation ensuring structural consistency across scans for improved analysis.
+
+Atlas-based segmentation is applied on these scans leveraging Harvard-Oxford cortical/subcortical atlases identifying 27 brain regions implicated in neurodegeneration, particularly focusing on structures like the hippocampus. From these segmented regions, the system computes multiple quantitative biomarkers: volumetric measurements using efficient integral image approaches, surface area calculations, and advanced shape descriptors including compactness, sphericity, and eccentricity.
+
+The system processes radiology reports using an NLP pipeline based on PubMedBERT, leveraging domain-specific embeddings for medical text analysis. Text-processing includes context-aware tokenization, medical-entity recognition, and dependency parsing to understand negations and syntactic relationships to extract relevant context for analyses. BART-based classifiers generate initial risk contexts, which are further refined through clustering and severity rating. K-means clustering (k=3) identifies report similarity patterns, and final risk scores are computed as a weighted sum of severity and cluster-risk. The model employs stacked transformer blocks with 4-head attention to analyse complex clinical language, ensuring robust contextual understanding. Training results demonstrated stable learning with consistent loss reduction across multiple epochs, enhancing risk assessment accuracy ensuring successful development of the pipeline.
+
 
 ## Website Structure
 
