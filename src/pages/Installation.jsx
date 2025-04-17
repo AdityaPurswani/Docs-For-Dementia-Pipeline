@@ -3,7 +3,7 @@ import CodeBlock from '../components/CodeBlock';
 
 const Installation = () => {
   return (
-    <div className="p-8 ml-50">
+    <div className="p-8">
       {/* Introduction */}
       <h1 className="text-3xl font-bold mb-6">Installation Guide</h1>
       

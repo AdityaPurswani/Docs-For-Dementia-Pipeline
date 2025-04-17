@@ -4,8 +4,8 @@ import NiftiViewer from '../../components/NiftiViewer';
 
 const Visualization = () => {
   return (
-    <div className="p-8 ml-100">
-      <h1 className="text-3xl font-bold mb-6">MRI Visualization</h1>
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6 ml-80">MRI Visualization</h1>
       <div className="max-w-4xl mx-auto">
         <NiftiViewer />
       </div>

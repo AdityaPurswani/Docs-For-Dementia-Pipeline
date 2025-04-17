@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, MessageSquare, User } from 'lucide-react';
 
 const ContactForm = () => (
-  <div className="w-full flex items-center justify-center ml-60">
+  <div className="w-full flex items-center justify-center">
     <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg shadow-sm p-8">
         <div className="flex gap-8">
@@ -76,7 +76,7 @@ const ContactForm = () => (
               <div>
                 <button
                   type="submit"
-                  className="bg-blue-600 inline-flex items-center justify-center rounded-md border border-transparent  px-6 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors"
+                  className="bg-white-600 inline-flex items-center justify-center rounded-md border border-transparent  px-6 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-green-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors"
                 >
                   Send message
                 </button>

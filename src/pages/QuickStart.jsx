@@ -4,7 +4,7 @@ import CodeBlock from '../components/CodeBlock';  // Move CodeBlock to a separat
 
 const QuickStart = () => {
     return (
-      <div className="p-8 ml-60">
+      <div className="p-8">
         <h1 className="text-3xl font-bold mb-6">Quick Start Guide</h1>
   
         {/* Basic Concepts */}
