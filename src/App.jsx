@@ -33,7 +33,7 @@ const App = () => {
           {/* <Route path="/requirements" element={<Requirements />} /> */}
 
           {/* MRI Analysis routes */}
-          <Route path="https://docs-for-dementia-pipeline.vercel.app/mri/loading" element={<LoadingImages />} />
+          <Route path="/mri/loading" element={<LoadingImages />} />
           <Route path="/mri/preprocessing" element={<Preprocessing />} />
           <Route path="/mri/segmentation" element={<Segmentation />} />
           <Route path="/mri/visualization" element={<Visualization />} />
