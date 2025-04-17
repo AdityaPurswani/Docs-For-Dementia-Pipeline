@@ -27,19 +27,19 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                 <SearchBar />
               </div>
               <div className="hidden md:flex items-center gap-4">
-                <a href="/contact" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="/contact" className="text-gray-500 hover:text-gray-900">
                   Contact
                 </a>
-                <a href="https://github.com/AdityaPurswani/Docs-For-Dementia-Pipeline" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="https://github.com/AdityaPurswani/Docs-For-Dementia-Pipeline" className="text-gray-500 hover:text-gray-900">
                   <Github size={20} />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="#" className="text-gray-500 hover:text-gray-900">
                   <Twitter size={20} />
                 </a>
               </div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="md:hidden p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                className="md:hidden p-2 text-gray-500 hover:text-gray-900"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
