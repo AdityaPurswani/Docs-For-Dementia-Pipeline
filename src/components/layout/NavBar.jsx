@@ -7,7 +7,7 @@ import ContactForm from '../ContactForm';
 
 const NavBar = ({ isOpen, setIsOpen }) => {
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur dark:border-gray-800 dark:bg-gray-900/80">
+    <header className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur">
       <div className="mx-auto">
         <div className="py-4 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -16,7 +16,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                 <span className="text-2xl font-bold text-gray-900 dark:text-white">
                   <img className='w-16 h-8 object-contain flex-row' src={brain}/>
                 </span>
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                <span className="text-2xl font-bold text-gray-900">
                   Docs
                 </span>
               </Link>
